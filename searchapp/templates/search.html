@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+    <title>Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            margin: 0 auto;
+            max-width: 300px;
+        }
+        input[type="text"] {
+            width: 70%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            width: 25%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <form method="get" action="{% url 'search' %}">
+        <input type="text" name="q" placeholder="Search...">
+        <input type="submit" value="Search">
+    </form>
+    <h1>Hello {{name}} !!</h1>
+</body>
+</html>
