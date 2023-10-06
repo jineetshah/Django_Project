@@ -1,0 +1,12 @@
+{
+  "files": {
+    ".env.template": [
+      {
+        "id": "9bda05c9-7d72-4250-ab33-5e4af745365d",
+        "line": 1,
+        "version": 1,
+        "index": 0
+      }
+    ]
+  }
+}
