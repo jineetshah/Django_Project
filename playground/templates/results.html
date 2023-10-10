@@ -2,8 +2,66 @@
 <html>
   <head>
     <title>Confirmed Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 20px;
+      }
+      
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      
+      h1 {
+        color: #333;
+        text-align: center;
+      }
+      
+      p {
+        color: #666;
+        text-align: center;
+      }
+      
+      h2 {
+        color: #333;
+        margin-top: 30px;
+        text-align: center;
+      }
+      
+      ul {
+        text-align: center;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      
+      li {
+        margin-bottom: 10px;
+      }
+      
+      li span {
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body>
-    <h1>Confirmed</h1>
+    <div class="container">
+      <h1>Confirmed</h1>
+      <p>You will receive an email on an hourly basis if the temperature in your selected location goes out of the specified range.</p>
+      <h2>Details:</h2>
+      <ul>
+        <li><span>Email address:</span> {{ email }}</li>
+        <li><span>Location:</span> {{ location }}</li>
+        <li><span>Minimum Temperature:</span> {{ min_temp }}</li>
+        <li><span>Maximum Temperature:</span> {{ max_temp }}</li>
+      </ul>
+    </div>
   </body>
 </html>

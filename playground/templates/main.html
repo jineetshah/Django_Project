@@ -7,24 +7,44 @@
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
     <style>
         body {
-            background-image: url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg');
+            background-image: url('https://images.unsplash.com/photo-1553095066-5014bc7b7f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbCUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&w=1000&q=80');
             background-size: cover;
             background-position: center;
         }
+        
+        * {
 
+            font-weight: bold;
+        }
+        
+        h1 {
+          
+          color : yellow;
+            background-color: green;
+            padding: 10px;
+        }
+        
         form {
+           color : yellow;
+            margin-top: 200cm;
             border: 1px solid #ddd;
-            padding: 20px;
+            padding: 40px;
             margin: 20px 0;
             backdrop-filter: blur(10px);
         }
-
+        
         input[type="submit"]:hover {
             background-color: #5a6268;
             border-color: #5a6268;
-             background-color: green;
-    border-color: green;
+            background-color: green;
+            border-color: green;
         }
+
+        .Dropdown {
+            color: black;
+        }
+        
+        
     </style>
 </head>
 <body>
@@ -39,9 +59,8 @@
                 <label>Location</label>
                 <select id="location-select" name="dropdown" class="form-control" required>
                 {% for city in cities %}
-                  <option value="{{ city }}">{{ city }}</option>
+                  <option class="Dropdown" value="{{ city }}">{{ city }}</option>
                 {% endfor %}
-
                 </select>
             </div>
             <div class="form-group row">

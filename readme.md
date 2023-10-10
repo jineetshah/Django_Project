@@ -28,3 +28,12 @@ select a city from the dropdown and boom its done.
 click on submit and take a cup of coffee.
 
 an agent will be deployed which will update you every hour if there is a temperature bounds violation.
+
+
+![image](image.png)
+
+
+
+![image](image_2.png)
+
+![image](image_3.png)
