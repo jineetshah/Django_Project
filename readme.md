@@ -9,13 +9,15 @@ you can start by first installing the dependencies by running the command
 pip install -r requirements.txt
 ```
 
+Then you must add the `.env`, you can refer to the `.env.template` for furthur details.
+
 Then you can run the Django project by running:
 
 ```
 python3 manage.py runserver 0.0.0.0:3000
 ```
 
-Finally by going to this page (make sure the url is http)
+Finally by going to this page
 ```
 /playground/main/
 ```
