@@ -1,3 +1,5 @@
 django
 uagents
 python-dotenv
+pandas
+openpyxl

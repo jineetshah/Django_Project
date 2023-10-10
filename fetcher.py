@@ -1,5 +1,6 @@
 import requests
 from dotenv import load_dotenv
+from emailer import send_email
 import os
 
 # load the environment variables from the .env file
@@ -22,8 +23,11 @@ def fetch_temperature(location: str):
             "temperature_celsius": f"{temperature_celsius:.2f}",
             "temperature_fahrenheit": f"{temperature_fahrenheit:.2f}"
         }
-    return None
+
+    return
 
 
-def send_alert(message: str):
-    print(f"Alert: {message}")
+def send_alert(email: str, message: str) -> None:
+    send_email('Temperature Alert!', message, email, os.environ['TEST_EMAIL'],
+               os.environ['TEST_EMAIL_PASSWORD'])
+    return
