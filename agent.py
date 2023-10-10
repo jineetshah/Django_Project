@@ -12,7 +12,7 @@ temperature_agent = Agent(name="temperature_agent",
 
 
 # Define the task for the agent to check the temperature and send alerts
-@temperature_agent.on_interval(period=30)  # Run the task every 30 seconds
+@temperature_agent.on_interval(period=3600)  # Run the task every 1 hr
 async def check_temperature(ctx: Context):
     global location
     # Fetch the current temperature from the weather API for the specified location
